@@ -1,0 +1,243 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Instagram_Bot" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Instagram_Bot_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Instagram_Bot" sap:VirtualizedContainerService.HintSize="1172,2408.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Instagram(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="483.2,2385.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="ec9075d6-32e3-4724-b2f8-710a178e4b03" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,2145.6" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Create'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec9075d6-32e3-4724-b2f8-710a178e4b03" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="instagram.com" CVScreenId="07aebd07-f681-4aa8-93de-fd85b073ea6e" ContentHash="mSmgDsVcyUyGp5aihv_FoA" CvTextArea="86, 797, 60, 17" CvTextArgument="Create" CvType="Text" DesignTimeRectangle="89, 793, 57, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Create' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Create' tag='SPAN' type='' class='x1lliihq x193iq5w x6ikm8r x10wlt62 xlyipyv xuxw1ft' check:innerText='Create' /&gt;" Guid="0985e988-aa05-4a71-ae5b-bc7f07b44be4" InformativeScreenshot="a0da0106b38f1f0d5f562ee84437d1ff.png" Reference="VxgoMch9eUOwgHRBQGR-aA/9dwXiJ2jyUuWOS-4dTWzpw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instagram' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PostPost'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec9075d6-32e3-4724-b2f8-710a178e4b03" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="instagram.com" CVScreenId="d1e8df32-6377-41f3-926b-575f6af116fe" ContentHash="pg2dv_0oCEqLFnW-Vzfjgg" CvTextArea="42, 859, 40, 18" CvTextArgument="Post" CvType="Text" DesignTimeRectangle="24, 840, 250, 55" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;div' parentid='mount_0_0_33' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='mount_0_0_33' tag='DIV' class='x9f619 xjbqb8w x78zum5 x168nmei x13lgxp2 x5pf9jr xo71vjh x1pi30zi x1swvt13 xwib8y2 x1y1aw1k x1uhb9sk x1plvlek xryxfnj x1c4vz4f x2lah0s xdt5ytf xqjyukv x1qjc9v5 x1oa3qoh x1nhvcw1 xn3w4p2' aaname='' check:innerText='Post' /&gt;" Guid="cf7e5b1a-2300-49b5-bfc8-500cbefb0318" InformativeScreenshot="ac09b17e12dba2c05305de7ce16620f0.png" Reference="VxgoMch9eUOwgHRBQGR-aA/3ZiLBRt_rUuI_Wfi0zVorA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instagram' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Select from computer'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec9075d6-32e3-4724-b2f8-710a178e4b03" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="instagram.com" CVScreenId="e30514a9-25cf-4466-9263-a73254b8b82e" ContentHash="YC7-HOaCC0OZwGBj-dFSdg" CvElementArea="850, 713, 218, 45" CvTextArea="871, 726, 176, 21" CvTextArgument="Select from computer" CvType="Button" DesignTimeRectangle="853, 716, 213, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Select from computer' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Select from computer' tag='BUTTON' type='button' class=' _acan _acap _acas _aj1- _ap30' check:innerText='Select from computer' /&gt;" Guid="4d2fb272-6ed6-46ae-8551-7b9caa3e2d60" InformativeScreenshot="0f8a99b52de3a2e170fb318b6c03eb47.png" Reference="VxgoMch9eUOwgHRBQGR-aA/4gnkKkiP-EuWOKjlaqXDbA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create new post • Instagram' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'moto gp'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_23" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec9075d6-32e3-4724-b2f8-710a178e4b03" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="instagram.com" CVScreenId="35bcd8db-488c-42c9-82a4-895f9f59f1f7" ContentHash="Svz38p3K8UCS2cVFvwa1AA" CvTextArea="269, 276, 60, 15" CvTextArgument="moto gp" CvType="Text" DesignTimeRectangle="227, 150, 131, 147" DesignTimeScaleFactor="1.25" ElementType="ListItem" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd ctrlid='1121' title='ShellView' /&gt;&lt;wnd aaname='Items View' cls='DirectUIHWND' /&gt;&lt;ctrl name='Items View' role='list' /&gt;&lt;ctrl automationid='0' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd ctrlid='1121' title='ShellView' /&gt;&lt;wnd aaname='Items View' cls='DirectUIHWND' /&gt;&lt;ctrl name='Items View' role='list' /&gt;&lt;ctrl automationid='0' role='list item' check:text='moto gp' /&gt;" Guid="acd6865a-44ab-4157-8f8c-09f31ab66c77" InformativeScreenshot="e93eb09b5c56243478439844919a6bc9.png" Reference="VxgoMch9eUOwgHRBQGR-aA/p4K5s4xGAUS2RcixMwMsjw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Open'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_15" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec9075d6-32e3-4724-b2f8-710a178e4b03" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="instagram.com" CVScreenId="25b68a18-4752-47ad-8a68-7303c6eac2b5" ContentHash="xmZclIDGPku1lUKe7P_KWg" CvElementArea="693, 535, 111, 34" CvTextArea="729, 545, 38, 16" CvTextArgument="Open" CvType="Button" DesignTimeRectangle="695, 537, 110, 33" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' check:text='&amp;amp;Open' /&gt;" Guid="eb6974c1-8779-4527-9ffc-d2664295055a" InformativeScreenshot="b9fc3b73fcca0bd32e2358123b2648db.png" Reference="VxgoMch9eUOwgHRBQGR-aA/c36psVs_60ey4iJZ7HW-Gw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec9075d6-32e3-4724-b2f8-710a178e4b03" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="instagram.com" CVScreenId="4e2e345f-78e7-412e-9157-7b6fef399611" ContentHash="tMMDmHN-DUWEcvGvEXNaPQ" CvTextArea="1197, 287, 41, 16" CvTextArgument="Next" CvType="Text" DesignTimeRectangle="1199, 285, 38, 23" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Next' aria-role='button' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Next' aria-role='button' tag='DIV' type='' class='x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w xdl72j9 x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1q0g3np x1lku1pv x1a2a7pz x6s0dn4 xjyslct x1ejq31n xd10rxx x1sy0etr x17r0tee x9f619 x1ypdohk x1f6kntn xwhw2v2 xl56j7k x17ydfre x2b8uid xlyipyv x87ps6o x14atkfc xcdnw81 x1i0vuye xjbqb8w xm3z3ea x1x8b98j x131883w x16mih1h x972fbf xcfux6l x1qhh985 xm0m39n xt0psk2 xt7dq6l xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x1n5bzlp x173jzuc x1yc6y37' check:innerText='Next' /&gt;" Guid="79981cf2-15f9-4a9d-9b2f-3657b7c15459" InformativeScreenshot="716af09fda010a5ec9f245a7e2db2992.png" Reference="VxgoMch9eUOwgHRBQGR-aA/uxLmA7jjEEuSEZpsN_d1SA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create new post • Instagram' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225.6" sap2010:WorkflowViewState.IdRef="NClick_27" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec9075d6-32e3-4724-b2f8-710a178e4b03" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="instagram.com" CVScreenId="21b8046a-e4c0-4e52-9113-14da8ab8313e" ContentHash="ckb_6NiqV0ifpRD15sbPZw" CvTextArea="1377, 352, 41, 16" CvTextArgument="Next" CvType="Text" DesignTimeRectangle="1379, 350, 38, 23" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Next' aria-role='button' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Next' aria-role='button' tag='DIV' type='' class='x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w xdl72j9 x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1q0g3np x1lku1pv x1a2a7pz x6s0dn4 xjyslct x1ejq31n xd10rxx x1sy0etr x17r0tee x9f619 x1ypdohk x1f6kntn xwhw2v2 xl56j7k x17ydfre x2b8uid xlyipyv x87ps6o x14atkfc xcdnw81 x1i0vuye xjbqb8w xm3z3ea x1x8b98j x131883w x16mih1h x972fbf xcfux6l x1qhh985 xm0m39n xt0psk2 xt7dq6l xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x1n5bzlp x173jzuc x1yc6y37' check:innerText='Next' /&gt;" Guid="1d2edd9d-0854-4235-9ccd-e80de6f30cc0" InformativeScreenshot="979cb14adc83af715634c016886fc0c8.png" Reference="VxgoMch9eUOwgHRBQGR-aA/E7Y3zF1QJUeqZNawlKxJgA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create new post • Instagram' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'DIV(2)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="ec9075d6-32e3-4724-b2f8-710a178e4b03" Text="This is a sample one" Version="V4">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="instagram.com" ContentHash="8c9qt6zp4UqRtPIXKV3P-Q" DesignTimeRectangle="1046, 464, 405, 210" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-role='textbox' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='textbox' tag='DIV' type='' class='xw2csxc x1odjw0f x1n2onr6 x1hnll1o xpqswwc xl565be x5dp1im xdj266r x11i5rnm xat24cr x1mh8g0r x1w2wdq1 xen30ot x1swvt13 x1pi30zi xh8yej3 x5n08af notranslate' aaname='' /&gt;" Guid="99d61c9a-5705-4893-bf2c-2019eadeff15" InformativeScreenshot="9c9eb65fd89471632300dec0ba58ccbe.png" Reference="VxgoMch9eUOwgHRBQGR-aA/71Smq18wcEu9kblcvGb1OQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create new post • Instagram' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V5" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Share'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218.4" sap2010:WorkflowViewState.IdRef="NClick_28" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec9075d6-32e3-4724-b2f8-710a178e4b03" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="instagram.com/_vijay_291204" CVScreenId="86ca7472-15bc-4ec0-b1dd-f0939bd96e83" ContentHash="nk_IDV4NUk6LAO5Hg1AYqA" CvTextArea="1370, 351, 47, 17" CvTextArgument="Share" CvType="Text" DesignTimeRectangle="1373, 350, 44, 23" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Share' aria-role='button' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Share' aria-role='button' tag='DIV' type='' class='x1i10hfl xjqpnuy xa49m3k xqeqjp1 x2hbi6w xdl72j9 x2lah0s xe8uvvx xdj266r x11i5rnm xat24cr x1mh8g0r x2lwn1j xeuugli x1hl2dhg xggy1nq x1ja2u2z x1t137rt x1q0g3np x1lku1pv x1a2a7pz x6s0dn4 xjyslct x1ejq31n xd10rxx x1sy0etr x17r0tee x9f619 x1ypdohk x1f6kntn xwhw2v2 xl56j7k x17ydfre x2b8uid xlyipyv x87ps6o x14atkfc xcdnw81 x1i0vuye xjbqb8w xm3z3ea x1x8b98j x131883w x16mih1h x972fbf xcfux6l x1qhh985 xm0m39n xt0psk2 xt7dq6l xexx8yu x4uap5 x18d9i69 xkhd6sd x1n2onr6 x1n5bzlp x173jzuc x1yc6y37' check:innerText='Share' /&gt;" Guid="07259859-92ef-4ef0-ae2f-4b3271273391" InformativeScreenshot="2031f1b083a89de86398ae56c7709796.png" Reference="VxgoMch9eUOwgHRBQGR-aA/BDAXLvLR9k-110dml0vxTA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Create new post • Instagram' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V5" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" ContentHash="gwMDLuIhckiPBAR3xI4BDw" IconBase64="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" InformativeScreenshot="7b03eb1e98b7cbab83f71aaa1d91b7fa.jpg" Reference="VxgoMch9eUOwgHRBQGR-aA/neCjsjt6RE2rR5F7NlnpRw" Selector="&lt;html app='chrome.exe' title='Instagram' /&gt;" Url="https://www.instagram.com/" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
